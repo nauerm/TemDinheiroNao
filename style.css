@@ -49,14 +49,14 @@ input[type=number] {
 }
 
 .budget-container .app-title{
-    margin-top: 45px;
+    margin-top: 55px;
     margin-left: 20px;
 }
 
-.budget-container .app-title a{
+.budget-container .app-title p{
     color: #FFF;
 }
-.budget-container .app-title a b{
+.budget-container .app-title p b{
     font-family: 'Gilroy Bold';
 }
 
@@ -82,6 +82,11 @@ input[type=number] {
     font-family: 'Gilroy Bold';
 }
 
+.budget-header .balance .value .neg{
+    color: #00574b;
+    font-family: 'Gilroy Bold';
+}
+
 .budget-header .account{
     display: block;
     width: 310px;
@@ -100,16 +105,16 @@ input[type=number] {
 
 .budget-header .account .income .title{
     color: #FFF;
-    opacity: 0.5;
+    opacity: 1; 
 }
 .budget-header .account .income .income-total{
-    color: rgb(58, 255, 163);
+    color: #3affa3;
     font-family: 'Gilroy Bold';
 }
 
 .budget-header .account .outcome .title{
     color: #FFF;
-    opacity: 0.5;
+    opacity: 1;
 }
 .budget-header .account .outcome .outcome-total{
     color: #00574b;
@@ -128,7 +133,7 @@ input[type=number] {
 
 .budget-dashboard .dash-title{
     display: inline-block;
-    color: #244739;
+    color: #409e82; /*#244739*/
     font-size: 1.7em;
     margin-left: 20px;
     margin-top: 30px;
@@ -145,7 +150,7 @@ input[type=number] {
     display: inline-block;
     cursor: pointer;
     font-size: 1.1em;
-    color: #244739;
+    color: #409e82;
     font-family: 'Gilroy Bold';
     opacity: 0.4;
 }
@@ -222,10 +227,11 @@ input[type=number] {
 }
 
 .budget-dashboard #all ul.list li.income{
-
+    /* @note cor da receita no Tudo*/
+    color: #00be85;
 }
 .budget-dashboard #all ul.list li.expense{
-    color: #f0624d;
+    color: #00574b;
 }
 
 /* //////// EXPENSE ////////// */
@@ -267,7 +273,7 @@ input[type=number] {
     font-size: 1.2em;
     font-family: 'Gilroy';
     margin: 5px;
-    margin-left: -10px;
+    margin-left: 0px;
     border-radius: 0 10px 10px 0;
     border: none;
 }
@@ -306,7 +312,7 @@ input[type=number] {
     margin-bottom: 10px;;
     word-wrap: break-word;
     font-family: 'Gilroy Bold';
-    color: #f0624d;
+    color: #00574b;
 }
 
 .budget-dashboard #expense ul.list li #edit{
@@ -370,7 +376,7 @@ input[type=number] {
     font-size: 1.2em;
     font-family: 'Gilroy';
     margin: 5px;
-    margin-left: -10px;
+    margin-left: 0px;
     border-radius: 0 10px 10px 0;
     border: none;
 }
@@ -409,6 +415,8 @@ input[type=number] {
     margin-bottom: 10px;;
     word-wrap: break-word;
     font-family: 'Gilroy Bold';
+    /* @note cor da receita*/
+    color: #00be85;
 }
 
 .budget-dashboard #income ul.list li #edit{

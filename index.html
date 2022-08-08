@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Budget App</title>
+    <title>TemDinheiroNão</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="budget-container">
         <div class="app-title">
-            <a href="">Tem<b>Dinheiro</b>Não</a>
+            <p>Tem<b>Dinheiro</b>Não</p>
         </div>
         <div class="budget-header">
             <div class="balance">
@@ -17,7 +17,7 @@
                     Saldo
                 </div>
                 <div class="value">
-                    <small>$</small>0
+                    <small>R$ </small>0
                 </div>
             </div>
             <div class="account">
@@ -26,7 +26,7 @@
                         Receitas
                     </div>
                     <div class="income-total">
-                        <small>$</small>0
+                        <small>R$ </small>0
                     </div>
                 </div>
                 <div class="chart"></div>
@@ -35,7 +35,7 @@
                         Despesas
                     </div>
                     <div class="outcome-total">
-                        <small>$</small>0
+                        <small>R$ </small>0
                     </div>
                 </div>
             </div>
@@ -43,17 +43,9 @@
         <div class="budget-dashboard">
             <div class="dash-title">Resumo</div>
             <div class="toggle">
-                <div class="tab1">Receitas</div>
-                <div class="tab2">Despesas</div>
+                <div class="tab1">Despesas</div>
+                <div class="tab2">Receitas</div>
                 <div class="tab3 active">Tudo</div>
-            </div>
-            <div class="hide" id="income">
-                <ul class="list"></ul>
-                <div class="input">
-                    <input type="text" id="income-title-input" name="title" placeholder="Receita">
-                    <input type="number" id="income-amount-input" name="amount" placeholder="R$0">
-                    <div class="add-income"><img src="icon/plus.png" alt="add button"></div>
-                </div>
             </div>
             <div class="hide" id="expense">
                 <ul class="list"></ul>
@@ -63,12 +55,22 @@
                     <div class="add-expense"><img src="icon/plus.png" alt="add button"></div>
                 </div>
             </div>
-            <div id="all"></div>
+            <div class="hide" id="income">
+                <ul class="list"></ul>
+                <div class="input">
+                    <input type="text" id="income-title-input" name="title" placeholder="Receita">
+                    <input type="number" id="income-amount-input" name="amount" placeholder="R$0">
+                    <div class="add-income"><img src="icon/plus.png" alt="add button"></div>
+                </div>
+            </div>
+            <div id="all">
+                <ul class="list"></ul>
+            </div>
         </div>
     </div>
 
-    <script src="budget.js"></script>
     <script src="chart.js"></script>
+    <script src="budget.js"></script>
     
 </body>
 </html>
